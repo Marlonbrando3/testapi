@@ -26,18 +26,18 @@ export default async function Home() {
   // const handleInmovillaApi = async () => {
 
   try {
-    let data = await fetch("https://processes.inmovilla.com/api/v1/enums/?calidades", {
-      method: "GET",
+    let data = await fetch("https://procesos.inmovilla.com/api/v1/propiedades/?cod_ofer=COR2733", {
+      // method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "Token": "91B94ECFB80E9720F77635DB3779F079",
+        Token: "91B94ECFB80E9720F77635DB3779F079",
       },
     });
 
     const lolo = await data.json();
-    console.log("lslls " + lolo);
+    console.log(lolo);
   } catch (err) {
-    console.log("error " + err);
+    console.log("error " + (await err));
   }
 
   // };
