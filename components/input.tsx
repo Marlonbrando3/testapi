@@ -126,6 +126,7 @@ export default function Input() {
     (i) =>
       i.isAdded === true && (
         <div
+          key={i.name}
           //   onMouseDown={(e) => e.preventDefault()}
           id="inputRegionChoosedElement"
           className="cursor-pointer bg-red-500 rounded-[5px]  text-white flex w-[130px] py-[1px] px-[3px] items-center ml-[5px] mt-[5px] justify-between"
