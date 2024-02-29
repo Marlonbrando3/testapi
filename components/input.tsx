@@ -83,6 +83,7 @@ export default function Input() {
   const optionsToShow = OptionsOnTheList.map((i, index) => {
     return (
       <div
+        key={i.name}
         data-value={i.name}
         onMouseDown={(e) => e.preventDefault()}
         className={`cursor-pointer hover:bg-red-500 hover:text-white pl-[7px]} ${
